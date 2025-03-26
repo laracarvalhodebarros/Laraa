@@ -2,70 +2,106 @@
 <html lang="pt-br">
 <head>
     <charset="UTF-8">
-    <me name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Pesquisa sobre CSS</title>
+    <name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa sobre CSS</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background-color: #d38181;
-        }
-        h1, h2 {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
             color: #333;
         }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
         .container {
-            max-width: 800px;
+            width: 80%;
             margin: auto;
             background: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .imagem {
-            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         img {
             max-width: 100%;
             height: auto;
-            border-radius: 10px;
         }
-        a {
-            color: #4987c9;
-            text-decoration: none;
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Pesquisa sobre CSS</h1>
-        <p>O CSS (Cascading Style Sheets) é uma linguagem de estilização que permite separar a apresentação do conteúdo, garantindo flexibilidade, padronização e melhor experiência para o usuário.</p>
+    </header>
+    
+    <nav>
+        <a href="#o-que-e">O que é CSS?</a>
+        <a href="#evolucao">Evolução</a>
+        <a href="#conceitos">Conceitos</a>
+        <a href="#responsividade">Responsividade</a>
+        <a href="#seletores">Seletores</a>
+        <a href="#animacoes">Animações</a>
+        <a href="#boas-praticas">Boas práticas</a>
+    </nav>
+    
+    <div class="container">
+        <section id="o-que-e">
+            <h2>O que é CSS?</h2>
+            <p>CSS (Cascading Style Sheets) é uma linguagem de estilo usada para definir a aparência de documentos HTML.</p>
+        </section>
         
-        <h2>O que é CSS e qual a sua importância no desenvolvimento web?</h2>
-        <p>CSS é uma linguagem que define o estilo de uma página web, incluindo cores, fontes e layouts. Sua importância reside na capacidade de criar interfaces atrativas e responsivas.</p>
+        <section id="evolucao">
+            <h2>Evolução do CSS</h2>
+            <p>Desde sua criação em 1996, o CSS evoluiu significativamente, com a introdução de novas propriedades e funcionalidades.</p>
+        </section>
         
-        <h2>Como o CSS evoluiu?</h2>
-        <p>Desde sua criação em 1996, o CSS evoluiu com novas funcionalidades, como flexbox e grid, permitindo layouts mais dinâmicos e responsivos.</p>
+        <section id="conceitos">
+            <h2>Principais conceitos do CSS</h2>
+            <p>O CSS permite estilizar elementos, definir layouts, cores, fontes e muito mais.</p>
+        </section>
         
-        <h2>Principais conceitos do CSS</h2>
-        <p>Incluem seletores, propriedades, valores, herança e especificidade, que determinam como os estilos são aplicados aos elementos.</p>
+        <section id="responsividade">
+            <h2>Responsividade e acessibilidade</h2>
+            <p>Com o uso de media queries e boas práticas, o CSS melhora a acessibilidade e adaptação a diferentes telas.</p>
+        </section>
         
-        <h2>Responsividade e acessibilidade</h2>
-        <p>Com técnicas como media queries e unidades relativas, o CSS garante que páginas sejam acessíveis e adaptáveis a diferentes dispositivos.</p>
+        <section id="seletores">
+            <h2>Seletores CSS</h2>
+            <p>Existem seletores de classe, ID e elementos, cada um com uma finalidade específica.</p>
+        </section>
         
-        <h2>Diferença entre seletores</h2>
-        <p>Seletores de classe (<code>.classe</code>) são reutilizáveis, IDs (<code>#id</code>) são únicos e seletores de elementos aplicam-se a todas as ocorrências da tag.</p>
+        <section id="animacoes">
+            <h2>Animações CSS</h2>
+            <p>Animações tornam a experiência do usuário mais dinâmica e agradável.</p>
+        </section>
         
-        <h2>Animações em CSS</h2>
-        <p>Permitem transições suaves e efeitos visuais que melhoram a experiência do usuário.</p>
-        
-        <h2>Boas práticas</h2>
-        <p>Incluem organização do código, reutilização de estilos e uso de pré-processadores como SASS.</p>
-        
-            <src="https://www.w3.org/Style/CSS/Overview.en_files/css3.gif" alt="CSS logo">
-        </div>
-        
-        <p>Para mais informações, acesse <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">MDN Web Docs</a>.</p>
+        <section id="boas-praticas">
+            <h2>Boas práticas no CSS</h2>
+            <p>Organizar o código, reutilizar classes e evitar repetições são boas práticas essenciais.</p>
+        </section>
     </div>
+    
+    <footer>
+        <p>&copy; 2025 - Pesquisa sobre CSS</p>
+    </footer>
 </body>
 </html>
