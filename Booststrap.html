@@ -3,111 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <title>Aprendendo Bootstrap</title>
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
-    header {
-      background: linear-gradient(90deg, #66a1fa, #35018a);
-    }
-  </style>
+  <title>Cafeteria Artesanal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-extend-sm">
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Bootstrap Fácil</a>
-      <div>
-        <a class="navbar-brand" href="#header">Início</a>
-        <a class="navbar-brand" href="#vantagens">Contato</a>
+      <a class="navbar-brand" href="#">☕ Cafeteria Artesanal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cardápio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+        </ul>
       </div>
     </div>
   </nav>
 
-<!-- Header -->
-  <header id="header" class="text-white text-center p-5">
+ 
+  <section class="bg-light text-center py-5">
     <div class="container">
-      <h1 class="fw-bold">Descubra o poder do Bootstrap</h1>
-      <p class="lead">Crie páginas modernas, responsivas e rápidas com poucos cliques.</p>
-      <a href="#formulario" class="btn btn-light btn-lg mt-5 shadow-sm">Fale Conosco</a>
+      <h1 class="display-4">Bem-vindo à Cafeteria Artesanal</h1>
+      <p class="lead">Onde cada xícara é preparada com carinho, qualidade e sabor único.</p>
+      <a href="#cardapio" class="btn btn-primary btn-lg">Conheça nosso cardápio</a>
     </div>
-  </header>
+  </section>
 
-  <!-- Vantagens -->
-  <section class="container my-5 " id="vantagens">
-    <h2 class="text-center mb-4 fw-bold ">Por que usar Bootstrap?</h2>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card p-3 h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="text-primary fw-bold">Responsividade</h5>
-            <p class="">Seu site se adapta a qualquer dispositivo com facilidade.</p>
+
+  <section id="cardapio" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Nossos Cafés</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://www.cuisinart.com/dw/image/v2/ABAF_PRD/on/demandware.static/-/Sites-us-cuisinart-sfra-Library/default/dw42dcae51/images/recipe-Images/cafe-latte1-recipe_resized.jpg?sw=1200&sh=1200&sm=fit" class="card-img-top" alt="Latte">
+            <div class="card-body">
+              <h5 class="card-title">Café Latte</h5>
+              <p class="card-text">Espresso suave com leite vaporizado. Cremoso e delicado.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card p-3 h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="text-success fw-bold">Estilo Pronto</h5>
-            <p class="">Componentes modernos como botões, tabelas e navbars prontos para uso.</p>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://www.acasaencantada.com.br/wp-content/uploads/2021/06/CaffeMocha_Header_Desktop_1176x712-1-794x481.webp" class="card-img-top" alt="Mocha">
+            <div class="card-body">
+              <h5 class="card-title">Mocha</h5>
+              <p class="card-text">Café, leite e chocolate. A combinação perfeita para adoçar o dia.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card p-3 h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="text-danger fw-bold">Produtividade</h5>
-            <p class="">Menos tempo escrevendo CSS, mais tempo criando funcionalidades.</p>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://tezlahotel.com.br/wp-content/uploads/2018/02/shutterstock_529515136-1000x650.jpg" class="card-img-top" alt="Espresso">
+            <div class="card-body">
+              <h5 class="card-title">Espresso</h5>
+              <p class="card-text">Puro, intenso e marcante. O verdadeiro sabor do café artesanal.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Formulário -->
-  <section id="formulario" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4 fw-bold">Entre em Contato</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6">
-          <div class="form-section">
-            <form>
-              <div class="">
-                <label for="nome" class="">Nome</label>
-                <input type="text" class="" id="nome" placeholder="Digite seu nome">
-              </div>
-              <div class="">
-                <label for="email" class="">E-mail</label>
-                <input type="email" class="" id="email" placeholder="exemplo@email.com">
-              </div>
-              <div class="">
-                <label for="assunto" class="">Assunto</label>
-                <select class="" id="assunto">
-                  <option selected>Selecione...</option>
-                  <option value="1">Dúvidas</option>
-                  <option value="2">Sugestões</option>
-                  <option value="3">Suporte</option>
-                </select>
-              </div>
-              <div class="">
-                <label for="mensagem" class="">Mensagem</label>
-                <textarea class="" id="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
-              </div>
-              <button type="submit" class="">Enviar</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="">
-    <p class="">&copy; 2025. Todos os direitos reservados</p>
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Cafeteria Artesanal. Todos os direitos reservados.</p>
+      <p class="mb-0">Feito com amor e café ☕</p>
+    </div>
   </footer>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
